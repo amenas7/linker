@@ -1,0 +1,249 @@
+<header class="header-web fondo-azul">
+    <div class="container">
+        <div class="" style="display: flex; justify-content: space-between;">
+            <a href="">
+                <img src="../../../assets/img/linker-logo-white.png" class="img-fluid">
+            </a>
+            <div class="d-flex align-items-center">
+                <!-- <a style="cursor: pointer; font-weight: bold;" class="btn_reclutadores">
+                    Alvaro Mena
+                </a> -->
+                <div ngbDropdown class="dropdown">
+                  <button ngbDropdownToggle class="btn btn-secondary" type="button" id="dropdownMenuButton1" aria-expanded="false" style="background-color: #0D3878; font-weight: bold; border: none;">
+                    Alvaro Mena
+                    </button>
+                    <ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1" style="min-width: 200px; text-align: center;">
+                        <li> <img src="../../../assets/img/user-generico.png" class="img-fluid w-50">  </li>
+                        <li><a ngbDropdownItem href="#" style="color: #0D3878;"> Inicio </a></li>
+                        <li><a ngbDropdownItem href="#" style="color: #0D3878;"> Configuración </a></li>
+                        <li><hr class="dropdown-divider" style="margin-left: 10px; margin-right: 10px;"></li>
+                        <li><a ngbDropdownItem href="#" style="color: #CB2226;"> Cerrar Sesión <i class="fa-solid fa-circle-xmark"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-dashboard">
+            <div class="btn-dashboard-nav">Inicio</div>
+            <div class="btn-dashboard-nav">Reclutamiento</div>
+            <div class="btn-dashboard-nav">Informes</div>
+        </div>
+        
+    </div>
+</header>
+
+<main style="background-color: #F6FBFF;">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12">
+                <div class="card mt-4 mb-4" style="border: none; -webkit-box-shadow: 0 0 9px 1px rgba(24,26,31,.07); box-shadow: 0 0 9px 1px rgba(24,26,31,.07);">
+                    <div class="card-body">
+                      <h5 class="card-title mt-2" style="color: #313944; float: left;"> Modificación de datos de empresa </h5>
+                      <p class="card-text" style="font-weight: bold; color: #005DA9; font-size: 1.2rem; text-align: left; margin-top: 70px;"> Datos de la empresa </p>
+
+                      <div class="row col-9 text-center mt-5">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">Nombre comercial de la empresa <span style="color: #DA3D3D;">*</span> </label>
+                        </div>
+                        <div class="col-7">
+                          <input type="text" class="form-control form-control_lg" autocomplete="off" disabled style="background-color: #F5F5F5;">
+                        </div>
+                      </div>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">Razón social registrada en SUNAT <span style="color: #DA3D3D;">*</span> </label>
+                        </div>
+                        <div class="col-7">
+                          <input type="text" class="form-control form-control_lg" autocomplete="off" disabled style="background-color: #F5F5F5;">
+                        </div>
+                      </div>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">RUC de la empresa <span style="color: #DA3D3D;">*</span> </label>
+                        </div>
+                        <div class="col-7">
+                          <input type="text" class="form-control form-control_lg" autocomplete="off" disabled style="background-color: #F5F5F5;">
+                        </div>
+                      </div>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">País <span style="color: #DA3D3D;">*</span> </label>
+                        </div>
+                        <div class="col-7">
+                          <input type="text" class="form-control form-control_lg" autocomplete="off" disabled style="background-color: #F5F5F5;">
+                        </div>
+                      </div>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">Departamento <span style="color: #DA3D3D;">*</span> </label>
+                        </div>
+                        <div class="col-7">
+                            <select class="form-select form-select_lg">
+                                <option selected>Lima</option>
+                            </select>
+                        </div>
+                      </div>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">Ciudad / Distrito <span style="color: #DA3D3D;">*</span> </label>
+                        </div>
+                        <div class="col-7">
+                            <select class="form-select form-select_lg">
+                                <option selected>Breña</option>
+                            </select>
+                        </div>
+                      </div>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">Dirección <span style="color: #DA3D3D;">*</span> </label>
+                        </div>
+                        <div class="col-7">
+                          <input type="text" class="form-control form-control_lg" autocomplete="off">
+                        </div>
+                      </div>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">Sector empresarial <span style="color: #DA3D3D;">*</span> </label>
+                        </div>
+                        <div class="col-7">
+                          <input type="text" class="form-control form-control_lg" autocomplete="off" disabled style="background-color: #F5F5F5;">
+                        </div>
+                      </div>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">Número de trabajadores <span style="color: #DA3D3D;">*</span> </label>
+                        </div>
+                        <div class="col-7">
+                          <input type="text" class="form-control form-control_lg" autocomplete="off" disabled style="background-color: #F5F5F5;">
+                        </div>
+                      </div>
+
+                      <p class="card-text" style="font-weight: bold; color: #005DA9; font-size: 1.2rem; text-align: left; margin-top: 60px;"> Tipo de empresa </p>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; text-align: right; color: #313944;" class="col-form-label">Descripción de la empresa (describe solo la empresa, podrás describir tu oferta en el paso siguiente) <span style="color: #DA3D3D;">*</span> </label>
+                        </div>
+                        <div class="col-7">
+                          <textarea class="form-control" style="resize: none; height: 100px;"></textarea>
+                          <span style="float: right; margin-top: 5px; font-size: 0.8rem;">(máximo 2.000 caracteres)</span>
+                        </div>
+                      </div>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">Página web de la empresa </label>
+                        </div>
+                        <div class="col-7">
+                          <input type="text" class="form-control form-control_lg" autocomplete="off">
+                        </div>
+                      </div>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">Inserta el logo de la empresa </label>
+                        </div>
+                        <div class="col-7">
+                          <input type="text" class="form-control form-control_lg" autocomplete="off">
+                        </div>
+                      </div>
+
+                      <div class="mt-4">
+                        <span style="font-size: 0.8rem;"> Sube el logo de tu empresa en formato jpg/jpeg/gif/png/bmp. Peso máximo de 500Kb </span>
+                      </div>
+
+                      <p class="card-text" style="font-weight: bold; color: #005DA9; font-size: 1.2rem; text-align: left; margin-top: 60px;"> Datos de persona de contacto </p>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">Nombre <span style="color: #DA3D3D;">*</span> </label>
+                        </div>
+                        <div class="col-7">
+                          <input type="text" class="form-control form-control_lg" autocomplete="off">
+                        </div>
+                      </div>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">Apellidos <span style="color: #DA3D3D;">*</span> </label>
+                        </div>
+                        <div class="col-7">
+                          <input type="text" class="form-control form-control_lg" autocomplete="off">
+                        </div>
+                      </div>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">Cargo <span style="color: #DA3D3D;">*</span> </label>
+                        </div>
+                        <div class="col-7">
+                            <select class="form-select form-select_lg">
+                                <option selected>Director de Recursos Humanos</option>
+                            </select>
+                        </div>
+                      </div>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">Selecciona un teléfono <span style="color: #DA3D3D;">*</span> </label>
+                        </div>
+                        <div class="col-7">
+                            <div class="container p-0">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <select class="form-select form-select_lg">
+                                            <option selected>Celular</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control form-control_lg" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="row col-9 text-center mt-4">
+                        <div class="col-5 align-self-center">
+                          <label style="float: right; color: #313944;" class="col-form-label">Teléfono 2 </label>
+                        </div>
+                        <div class="col-7">
+                            <div class="container p-0">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <select class="form-select form-select_lg" style="">
+                                            <option selected>Selecciona un teléfono</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control form-control_lg" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <hr>
+
+                      <span style="float: right; font-style: italic; font-size: 0.8rem;"> Los campos seleccionados con <span style="color: #DA3D3D;">(*)</span> son obligatorios </span>
+
+                      <br>
+                      <a class="btn btn-primary" style="background-color: #F0F2F4; border: #F0F2F4; color: #A6A5AF; font-weight: bold; padding: 15px 38px;"> Actualizar datos </a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="text-center p-3" style="border-top: 1px solid #E1E5EA;">
+    <span style="padding: 10px;"> Copyright 2023 </span>
+</footer>

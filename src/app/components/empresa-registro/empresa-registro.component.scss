@@ -1,0 +1,67 @@
+.header-web{
+    padding-top: 11px;
+    padding-bottom: 11px;
+    top: 0;
+    left: 0;
+    right: 0;
+    //padding-left: 70px;
+    z-index: 9;
+}
+
+.fondo-azul{
+    background: rgb(9,43,94);
+    background: -moz-linear-gradient(90deg, rgba(9,43,94,1) 13%, rgba(13,56,120,1) 46%);
+    background: -webkit-linear-gradient(90deg, rgba(9,43,94,1) 13%, rgba(13,56,120,1) 46%);
+    background: linear-gradient(90deg, rgba(9,43,94,1) 13%, rgba(13,56,120,1) 46%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#092b5e",endColorstr="#0d3878",GradientType=1);
+}
+
+.btn_reclutadores{
+    text-decoration: none;
+    color: white;
+}
+
+.btn_reclutadores:hover{
+    text-decoration: underline;
+}
+
+.bg_register{
+    background-image: url(../../../assets/img/bg_register_ae.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px 0 80px;
+}
+
+.form-control{
+    padding: 0.8rem 0.75rem;
+}
+
+.form-select{
+    padding: 0.8rem 2.25rem 0.8rem 0.75rem;
+}
+
+.input_error{
+    border: 1px solid red;
+}
+
+.span_error{
+    background-color: #DA3D3D; 
+    color: white; 
+    border-radius: 20px; 
+    padding: 4px 8px; 
+    font-size: 0.8rem;
+}
+
+.input_noerror{
+    border: 1px solid #DEE2E6;
+}
+
+.color-gris{
+    color: #313944; 
+}
+
+.input-gris{
+    color: #313944; 
+    margin-bottom: 8px;
+}

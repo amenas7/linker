@@ -1,0 +1,58 @@
+body{
+    font-family: Arial,sans-serif;
+}
+
+.header-web{
+    padding-top: 11px;
+    padding-bottom: 11px;
+    top: 0;
+    left: 0;
+    right: 0;
+    //padding-left: 70px;
+    z-index: 9;
+}
+
+.fondo-azul{
+    background: #0D3878;
+}
+
+.btn_reclutadores{
+    text-decoration: none;
+    color: white;
+}
+
+.btn_reclutadores:hover{
+    text-decoration: underline;
+}
+
+
+.btn-dashboard{
+    color: #BAC6D8; 
+    display: flex; 
+    padding: 10px;
+    padding-top: 17px;
+    padding-bottom: 0px;
+    width: 25%;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+
+.btn-dashboard-nav{
+    border-bottom: solid 4px transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.btn-dashboard-nav:hover{
+    border-bottom: 4px solid #59BAA8;
+    transition: 0.2s;
+    color: white;
+}
+
+.form-control_lg{
+    padding: 0.5rem 1rem;
+}
+
+.form-select_lg{
+    padding: 0.5rem 2.25rem 0.5rem 1rem;
+}

@@ -1,0 +1,193 @@
+<header class="header-web fondo-azul">
+    <div class="container">
+        <div class="" style="display: flex; justify-content: space-between;">
+            <a href="">
+                <img src="../../../assets/img/linker-logo-white.png" class="img-fluid">
+            </a>
+            <div class="d-flex align-items-center">
+                <a style="cursor: pointer;" class="btn_reclutadores">
+                    Acceso reclutadores registrados
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+<main class="bg_register">
+    
+
+    <div class="container">
+      <div class="row">
+          <div class="col-8">
+            <div class="card mt-4" style="">
+              <div class="card-body">
+                  <div class="container">
+                      <form [formGroup]="registroGroup" class="row p-2">
+                          <p style="color: #FF5B00; font-size: 1.3rem;">
+                            Hacemos que tu proceso de selección sea rápido y efectivo
+                          </p>
+                          <div class="col-md-6">
+                            <input formControlName="nombre" type="text" class="form-control input-gris" placeholder="Nombre y apellidos" autocomplete="off" [ngClass]=" f.nombre.errors && f.nombre.touched ? 'input_error' : 'input_noerror'" >
+
+                            <span class="span_error" *ngIf="f.nombre.errors && f.nombre.touched"> Obligatorio </span>
+
+                          </div>
+                          <div class="col-md-6">
+                            <input formControlName="telefono" type="text" class="form-control input-gris" placeholder="Teléfono" autocomplete="off" [ngClass]=" f.telefono.errors && f.telefono.touched ? 'input_error' : 'input_noerror'" >
+
+                            <span class="span_error" *ngIf="f.telefono.errors && f.telefono.touched"> Obligatorio </span>
+                          </div>
+      
+                          <div class="col-md-6 mt-4">
+                              <input type="text" class="form-control input-gris" placeholder="E-mail de acceso" autocomplete="off" formControlName="email" [ngClass]=" f.email.errors && f.email.touched ? 'input_error' : 'input_noerror'">
+
+                              <span class="span_error" *ngIf="f.email.errors && f.email.touched"> Obligatorio </span>
+                          </div>
+                          <div class="col-md-6 mt-4">
+                            <div class="input-group">
+                              <input type="password" class="form-control" placeholder="Contraseña" style="border-right: none; color: #313944; " [type]="fieldTextType ? 'text' : 'password'" autocomplete="off" formControlName="contrasena" [ngClass]=" f.contrasena.errors && f.contrasena.touched ? 'input_error' : 'input_noerror'">
+
+                              <span (click)="showPassword()" class="input-group-text" style="background-color: white; cursor: pointer; border-left: none;" data-bs-toggle="popover"
+                              data-bs-html="true"
+                              data-bs-trigger="hover focus"
+                              data-bs-content="La clave ha de contener un mínimo de 4 carácteres y un máximo de 50 carácteres."
+                              aria-expanded="false" [ngClass]=" f.contrasena.errors && f.contrasena.touched ? 'input_error' : 'input_noerror'"> <i style="color: #0D3878" class="fa-solid fa-eye"></i> </span>
+
+                            </div>
+
+                            <div *ngIf="f.contrasena.errors && f.contrasena.touched" style="margin-top: 8px;">
+                              <div *ngIf="f.contrasena.errors.required">
+                                <span class="span_error"> Obligatorio </span>
+                              </div>
+                            </div>
+
+                          </div>
+      
+                          <div class="col-md-6 mt-4">
+                              <input type="text" class="form-control input-gris" placeholder="Nombre comercial de la Empresa" autocomplete="off" formControlName="nombre_comercial" [ngClass]=" f.nombre_comercial.errors && f.nombre_comercial.touched ? 'input_error' : 'input_noerror'">
+
+                              <span class="span_error" *ngIf="f.nombre_comercial.errors && f.nombre_comercial.touched"> Obligatorio </span>
+                          </div>
+                          <div class="col-md-6 mt-4">
+                              <input type="text" class="form-control input-gris" placeholder="Razón social registrada en SUNAT" autocomplete="off" formControlName="razon_social" [ngClass]=" f.razon_social.errors && f.razon_social.touched ? 'input_error' : 'input_noerror'">
+
+                              <span class="span_error" *ngIf="f.razon_social.errors && f.razon_social.touched"> Obligatorio </span>
+                          </div>
+
+                          <div class="col-md-3 mt-4">
+                            <select class="form-select" formControlName="pais_input" (change)="onPaisChange($event.target)">
+                              <option *ngFor="let lista of listPais" [value]="lista.idPais"> {{lista.descripcion}} </option>
+                            </select>
+                          </div>
+
+                          <div class="col-md-3 mt-4">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="RUC" style="border-right: none;" autocomplete="off" formControlName="ruc" [ngClass]=" f.ruc.errors && f.ruc.touched ? 'input_error' : 'input_noerror'" >
+
+                              <span class="input-group-text" style="background-color: white;" data-bs-toggle="popover"
+                              data-bs-html="true"
+                              data-bs-trigger="hover focus"
+                              data-bs-content="RUC es es el registro informático a cargo de la SUNAT donde se encuentran inscritos los contribuyentes de todo el país, así como otros obligados a  inscribirse en él por mandato legal."
+                              aria-expanded="false" [ngClass]=" f.ruc.errors && f.ruc.touched ? 'input_error' : 'input_noerror'"> <i style="color: #0D3878;" class="fa-regular fa-circle-question"></i> </span>
+                            </div>
+
+                            <div *ngIf="f.ruc.errors && f.ruc.touched" style="margin-top: 8px;">
+                              <div *ngIf="f.ruc.errors.required">
+                                <span class="span_error"> Obligatorio </span>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="col-md-6 mt-4">
+                            <select class="form-select input-gris" (change)="onDepChange($event.target)" formControlName="departamento" [ngClass]=" f.departamento.errors && f.departamento.touched ? 'input_error' : 'input_noerror'">
+                                <option selected value="">Selecciona Departamento</option>
+                                <option *ngFor="let lista of listaDep" [value]="lista.idDepartamento"> {{lista.descripcion}} </option>
+                            </select>
+
+                            <span *ngIf="f.departamento.errors && f.departamento.touched"> 
+                              <div *ngIf="f.departamento.errors.required">
+                                <span class="span_error"> Obligatorio </span>
+                              </div>
+                            </span>
+
+                          </div>
+
+                          <div class="col-md-6 mt-4">
+                            <select class="form-select input-gris" formControlName="distrito" [ngClass]=" f.distrito.errors && f.distrito.touched ? 'input_error' : 'input_noerror'">
+                                <option selected value="">Selecciona una ciudad / distrito</option>                         
+                                <option *ngFor="let lista of listDistrito" [value]="lista.idDistrito"> {{lista.descripcion}} </option>
+                            </select>
+
+                            <span *ngIf="f.distrito.errors && f.distrito.touched"> 
+                              <div *ngIf="f.distrito.errors.required">
+                                <span class="span_error"> Obligatorio </span>
+                              </div>
+                            </span>
+                          </div>
+
+                          <div class="col-md-6 mt-4">
+                            <input style="color: #313944" type="text" class="form-control input-gris" placeholder="Dirección" autocomplete="off" formControlName="direccion" [ngClass]=" f.direccion.errors && f.direccion.touched ? 'input_error' : 'input_noerror'">
+
+                            <span class="span_error" *ngIf="f.direccion.errors && f.direccion.touched"> Obligatorio </span>
+                          </div>
+
+                          <div class="col-md-6 mt-4">
+                            <select class="form-select input-gris" formControlName="sector" [ngClass]=" f.sector.errors && f.sector.touched ? 'input_error' : 'input_noerror'">
+                                <option selected value="">Selecciona una sector</option>
+                                <option *ngFor="let lista of listaSector" [value]="lista.idSector"> {{lista.descripcion}} </option>
+                            </select>
+
+                            <span *ngIf="f.sector.errors && f.sector.touched"> 
+                              <div *ngIf="f.sector.errors.required">
+                                <span class="span_error"> Obligatorio </span>
+                              </div>
+                            </span>
+                          </div>
+
+                          <div class="col-md-6 mt-4">
+                            <select class="form-select input-gris" formControlName="cant_trabajadores" [ngClass]=" f.cant_trabajadores.errors && f.cant_trabajadores.touched ? 'input_error' : 'input_noerror'">
+                                <option selected value="">N° de trabajadores</option>
+                                <option *ngFor="let lista of listaCantTrabajadores" [value]="lista.idCantidadTrabajador"> {{lista.descripcion}} </option>
+                            </select>
+
+                            <span *ngIf="f.cant_trabajadores.errors && f.cant_trabajadores.touched"> 
+                              <div *ngIf="f.cant_trabajadores.errors.required">
+                                <span class="span_error"> Obligatorio </span>
+                              </div>
+                            </span>
+                          </div>
+
+                          <div class="col-md-12 mt-4">
+                            <textarea autocomplete="off" formControlName="descripcion" [ngClass]=" f.descripcion.errors && f.descripcion.touched ? 'input_error' : 'input_noerror'" style="resize: none; height: 180px; color: #313944; margin-bottom: 8px;" cols="30" rows="10" class="form-control" placeholder="Descripción de la empresa (describe solo la empresa, podrás describir tu oferta en el paso siguiente)" maxlength="2000"></textarea>
+
+                            <span class="span_error" *ngIf="f.descripcion.errors && f.descripcion.touched"> Obligatorio </span>
+
+                            <label style="float: right; color: #4B5968; margin-top: 10px;"> máximo 2,000 carácteres </label>
+                          </div>
+
+                          
+      
+                          <div class="col-12 mt-4">
+                            <button (click)="registrarEmpresa()" type="button" class="btn btn-primary" style="background-color: #FF5B00; color: white; border: 1px solid #FF5B00; font-weight: bold; padding: 15px 35px; font-size: 1.2rem;"> Únete ahora</button>
+
+
+                            <!-- <button class="btn btn-primary" (click)="onResetForm()">Limpiar</button> -->
+                          </div>
+                      </form>
+                  </div>
+              </div>
+            </div>
+
+            <p class="text-center mt-4" style="color: white; font-size: 1.1rem;"> Copyright 2023 </p>
+          </div>
+          <div class="col-4 mt-4 d-flex align-items-center">
+            <p style="color: white; font-size: 1.4rem;">
+              ¡Únete a nosotros y <b> publica tres avisos gratis al mes! </b> Ahorra costos y tiempo en tus procesos de selección y consigue el candidato ideal de una forma rápida y fácil
+            </p>
+          </div>
+      </div>
+    </div>
+
+</main>

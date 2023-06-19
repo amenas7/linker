@@ -1,0 +1,103 @@
+.fondo-azul{
+    background: rgb(9,43,94);
+    background: -moz-linear-gradient(90deg, rgba(9,43,94,1) 13%, rgba(13,56,120,1) 46%);
+    background: -webkit-linear-gradient(90deg, rgba(9,43,94,1) 13%, rgba(13,56,120,1) 46%);
+    background: linear-gradient(90deg, rgba(9,43,94,1) 13%, rgba(13,56,120,1) 46%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#092b5e",endColorstr="#0d3878",GradientType=1);
+}
+
+.header-web{
+    //background-color: #0D3878;
+    padding-top: 35px;
+    //height: 90px;
+    //position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    //padding-left: 70px;
+    z-index: 9;
+}
+
+
+.btn_reclutadores{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_reclutadores:hover{
+    text-decoration: underline;
+}
+
+.btn_crearcv{
+    margin-left: 15px; 
+    text-decoration: none; 
+    background-color: #fff; 
+    border-color: #0D3878; 
+    color: #0D3878; 
+    font-weight: bold; 
+    padding: 10px 15px; 
+    border-radius: 30px;
+}
+.btn_crearcv:hover{
+    background-color: #EAF3FB;
+}
+
+.btn-ver-empresas{
+    width: 180px;
+    background-color: white;
+    color: #0D3878;
+    border: 1px solid #0D3878;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.btn-ver-empresas:hover{
+    background-color: #0D3878;
+    color: white;
+}
+
+
+.box-home{
+    height: 350px;
+    background-image: url(//cp.ct-stc.com/web/20230601.01/c/img/home_girl.png),url(//cp.ct-stc.com/web/20230601.01/c/img/bg_home_girl.svg),url(//cp.ct-stc.com/web/20230601.01/c/img/home_boy.png),url(//cp.ct-stc.com/web/20230601.01/c/img/bg_home_boy.svg);
+    background-position: right 85px,right 85px,left 140px,left 140px;
+    background-repeat: no-repeat;
+}
+
+.linea-gris{
+    border-bottom: 1px solid #e1e5ea;
+}
+
+
+.btn-azul{
+    margin-left: 30px !important;
+    background-color: #0D3878;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+}
+
+.check-gris{
+    float: left;
+    content: '';
+    border-bottom: 1px solid #b4bdca;
+    border-left: 1px solid #b4bdca;
+    width: 8px;
+    height: 6px;
+    margin: 13px 5px 0;
+}
+
+
+.menu-tab-gris{
+    border: 1px solid #e1e5ea;
+    color: #005DA9;
+    background-color: #f9fafb;
+}
+
+.menu-tab-gris:hover{
+    background-color: #fff;
+}

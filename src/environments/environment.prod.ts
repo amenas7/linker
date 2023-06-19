@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  urlBackend: "https://devapilinker.azurewebsites.net"
 };
